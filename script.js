@@ -11,8 +11,8 @@ $( document ).ready(function() {
             },
             contentType: "applicatoin/json",
             success: function(content, status) {
-                chanelList=JSON.parse(content);
-                alert(chanelList[0].id)    
+               // chanelList = JSON.parse(content);
+                console.log(content._embedded.channelList[1]["name"])    
             },
             error: function() {
                 alert("error yay")
